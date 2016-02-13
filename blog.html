@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Tino Surge Blog</title>
+		<meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+		<meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="icon.png">
+		<link rel="stylesheet" type="text/css" href="css2/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css2/component.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="js2/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<h1><strong>Welcome to 7610's Team Blog.</strong></h1>
+                <br>
+                <br>
+                <br>
+                <a href="index.html" style="color:#F89406;"><h3><i class="fa fa-hand-o-left"></i>
+Back to Main Site</h3></a>
+			</header>
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="DSC_2664.JPG" alt="img01"/>
+                                <figcaption><h3>Redefining Teamwork:</h3><p> Implementing the SCRUM Model</p></figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="flac.png" alt="img02"/>
+								<figcaption><h3>FALC: </h3><p>Cupertino High School Robotics at the Fine Arts League Show</p></figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Redefining Teamwork:</h3>
+									<p style="font-size:13px;"> This meeting we had the privilege of meeting Mr. Charles Tsai, one of the parents of our team members and an employee of Cisco. Mr. Tsai had graced us with this presence for the purpose of showing us the SCRUM Model, a method utilized by many companies, including Cisco, to streamline and revolutionize our teamwork process. Some of our team leaders worked with Mr. Tsai to modify the SCRUM rotation so that it would mesh well with our meeting schedule of two meetings a week, instead of the every-day workplace environment it was invented to serve. As team leaders, we are extremely excited and ready to implement this model. We’re strongly in agreement with its core ideals of transparency, optimized workflow, and its leadership hierarchy model.</p>
+								</figcaption>
+								<img src="https://www.scrumalliance.org/scrum/media/ScrumAllianceMedia/PageGraphics/ScrumExplained-4-620.jpg" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<figcaption>
+									<h3>Cupertino High School Robotics at the Fine Arts League Show</h3>
+									<p>This week, we organized and presented at the Fine Arts League Show, a community event that over 1200 of our city’s residents attend and love every year. The atmosphere of the show is light, spunky, and fun. While presenting, we quickly realized that many, many people in our community had a lot of experience in robotics. We met some great people, including a man who designed spacecraft for NASA and was willing to come present to our robotics club. In addition to this, we were called up on the stage to present and publicize our program. Check out some of the highlights in the video. </p>
+								</figcaption>
+								
+                                  <video class="responsive-video" controls>
+                                    <source src="falc.mov" type="video/mp4">
+                                  </video>
+
+							</figure>
+						</li>
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">Navigate with arrow keys</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js2/imagesloaded.pkgd.min.js"></script>
+		<script src="js2/masonry.pkgd.min.js"></script>
+		<script src="js2/classie.js"></script>
+		<script src="js2/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+	</body>
+</html>

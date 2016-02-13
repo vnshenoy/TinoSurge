@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>TinoSurge</title>
+    <meta name="description" content="Tino Surge 7610 Official Site" />
+    <meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css3/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css3/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css3/component.css" />
+    <link rel="stylesheet" type="text/css" href="css4/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css4/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css4/book.css" />
+
+    <style>
+        [data-sr] {
+            visibility: hidden;
+        }
+
+    </style>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <div id="container" class="container"></div>
+    <div class="morph-button morph-button-sidebar morph-button-fixed" style="z-index:100;">
+        <button type="button" style="
+    background-color: #F89406;" class="waves-effect waves-light"><span class="fa fa-bars"></span></button>
+        <div class="morph-content">
+            <div>
+                <div class="content-style-sidebar">
+                    <h2 style="color:#C0392B;">Tino Surge <div class="icon icon-close"></div><br> FTC 7610</h2>
+                    <ul>
+                        <li><a class="icon icon-user" href="#meetus">Meet 7610</a></li>
+                        <li><a class="icon icon-heart" href="#love">What we do & love</a></li>
+                        <li><a class="icon icon-zoom-in" href="#first">FIRST & our community</a></li>
+                        <li><a class="icon icon-cog" href="#handbooks">Check out our <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;robotics handbooks</a></li>
+                        <li><a class="icon icon-briefcase" href="#">Fill out a form<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to help us with scouting</a></li>
+                        <li><a class="icon icon-globe" href="https://tinosurge.typeform.com/to/xahXLp"  target="_blank">Participate in outreach <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with us</a></li>
+                        <li><a href="http://thecurrent.co.nf">Team Blog</a></li>
+                        <li><a href="http://channelsurge.paperplane.io/">Watch our tutorial videos</a></li>
+                        <li><a href="http://www.chs.fuhsd.org/">Sponsored by <br>Cupertino High School</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- morph-button -->
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <h1 class="main-title" style="font-size:60px;"><img src="logo.png" data-sr style="width:100%; margin-top:25px; max-width: 270px;"><br><span class="thin" style="color:#F89406;">FTC 7610</span></h1>
+        </div>
+    </div>
+    <!-- /container -->
+    <br>
+    <br>
+    <br>
+    <div data-sr="enter right move 1000px">
+        <a id="meetus"></a>
+        <h1><strong>Meet the Team</strong></h1></div>
+    <h5 data-sr="enter right move 1000px">We are a group of high-school robotics hobbyists who meet every so often to build cool stuff.</h5>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                        <span class="card-title"><i class="fa fa-line-chart fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Deep Sethi</h3>
+                        <h5>Project Manager</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                        <span class="card-title"><i class="fa fa-commenting fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sohan Vichare</h3>
+                        <h5>Team Representative</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                        <span class="card-title"><i class="fa fa-code-fork fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Aki Praveen</h3>
+                        <h5>Systems Manager</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/DSC01799.JPG">
+                        <span class="card-title"><i class="fa fa-desktop fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Varun Shenoy</h3>
+                        <h5>Webmaster</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                        <span class="card-title"><i class="fa fa-camera-retro fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Yash</h3>
+                        <h4>Joshi</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                        <span class="card-title"><i class="fa fa-video-camera fa-3x personal"></i></span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jiahong</h3>
+                        <h4>Long</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" data-sr="enter right">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/DSC01745.JPG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mokshith</h3>
+                        <h4>Voodarla</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/DSC01807.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Snekha</h3>
+                        <h4>Senthilkumar</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Isha</h3>
+                        <h4>Adhvaryu</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" data-sr="enter left">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Saketh</h3>
+                        <h4>Ayyalasomayajula</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Shubh</h3>
+                        <h4>Sharma</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Rajath</h3>
+                        <h4>Rao</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jeamin</h3>
+                        <h4>Shin</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Anik</h3>
+                        <h4>Gupta</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="shashank.JPG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Shashank</h3>
+                        <h4>Mahesh</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/DSC01826.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Benjamin</h3>
+                        <h4>Liang</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/bendrew.JPG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Andrew</h3>
+                        <h4>Liang</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="hawtpics/DSC01805.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Eugene</h3>
+                        <h4>Kim</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="nitish.JPG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nitish</h3>
+                        <h4>Chennoju</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h3>Abhinav</h3>
+                        <h4>Gokhale</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4 m4">
+                <div class="card" data-sr>
+                    <div class="card-image">
+                        <img src="adiyan.JPG">
+                    </div>
+                    <div class="card-content">
+                        <h3>Adiyan</h3>
+                        <h4>Kaul</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a id="love"></a>
+        <h1 data-sr="scale down 50%"><strong>What we do & love</strong></h1></div>
+    <br>
+    <div class="row">
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="1.jpg">
+                    <span data-sr="wait 0.5s scale up 50%" class="card-title" style="color:#ecf0f1;font-size:50px;margin-left:50px;"><i class="fa fa-wrench fa-5x hov"></i></span>
+                </div>
+                <div class="card-content">
+                    <h2>We build <i>robots</i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="wait 0.5s enter top move 300px">
+                <div class="card-image">
+                    <img src="1.jpg">
+                    <span data-sr="wait 1s scale up 50%" class="card-title" style="color:#ecf0f1;font-size:50px;margin-left:50px;"><i class="fa fa-bullhorn fa-5x hov"></i></span>
+                </div>
+                <div class="card-content">
+                    <h2>We build <i>enthusiasm</i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px wait 1s">
+                <div class="card-image">
+                    <img src="1.jpg">
+                     <span data-sr="wait 1.5s scale up 50%" class="card-title" style="color:#ecf0f1;font-size:45px;margin-left:60px;"><i class="fa fa-users fa-5x hov"></i></span>
+                </div>
+                <div class="card-content">
+                    <h2>We build <i>people</i></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="first"></a>
+    <h1 data-sr="scale down 50%"><strong>FIRST & our Community</strong></h1></div>
+    <h2 data-sr="scale down 50%">We always put FIRST and our community before our team.</h2>
+    <div class="row">
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="first.png">
+                </div>
+                <div class="card-content">
+                    <h2>The FIRST Organization</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="city.jpg">
+                </div>
+                <div class="card-content">
+                    <h2>The City of Cupertino</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="tino.jpg">
+                </div>
+                <div class="card-content">
+                    <h2>Our School,</h2>
+                    <h5>Cupertino High School</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="robologo.jpg">
+                </div>
+                <div class="card-content">
+                    <h2>Tinorobotics</h2>
+                    <h5>The Robotics Organization at Cupertino High School</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="chuck.png">
+                </div>
+                <div class="card-content">
+                    <h2>Our one and only, <br> Mr. Williams</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4 m4">
+            <div class="card" data-sr="enter bottom move 300px">
+                <div class="card-image">
+                    <img src="logo.png">
+                </div>
+                <div class="card-content">
+                    <h2>Last but not least, ourselves</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <a id="handbooks"></a>
+    <h1 data-sr="scale down 50%"><strong>Download our FTC Robotics Handbooks</strong></h1></div>
+    <h2 data-sr="scale down 50%">Made for the wonderful FIRST community.</h2>
+    <div class="not-mobile">
+        <ul class="align">
+					<li data-sr="enter left move 200px">
+						<figure class='book'>
+
+							<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign yellow">
+										<!--<span class="ribbon">NEW</span>-->
+										<h1><i class="fa fa-cogs"></i></h1>
+										<p style="font-size:25px;">Hardware <br> Mechanisms</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+							<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="#">Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+							<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>Hardware</h1>
+                                <h3>Mechanisms</h3>
+							</figcaption>
+						</figure>
+					</li>
+					<li data-sr="enter right move 200px">
+						<figure class='book'>
+
+							<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign blue">
+										<h1><i class="fa fa-file-code-o"></i></h1>
+										<p style="font-size:30px;">Software</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+							<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="TeleOpHandbook.pdf" download>Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+							<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>Software</h1>
+							</figcaption>
+						</figure>
+					</li>
+					<li data-sr="enter left move 200px">
+						<figure class='book'>
+
+						<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign red">
+										<h1><i class="fa fa-wrench"></i></h1>
+										<p style="font-size:30px;">Hardware <br> Techniques</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+						<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="#">Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+						<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>Hardware</h1>
+                                <h3>Techniques</h3>
+							</figcaption>
+						</figure>
+					</li>
+					<li data-sr="enter right move 200px">
+						<figure class='book'>
+
+						<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign green">
+										<h1><i class="fa fa-paper-plane"></i></h1>
+										<p style="font-size:30px;">Outreach</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+						<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="#">Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+						<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>Outreach</h1>
+							</figcaption>
+						</figure>
+					</li>
+                    <li data-sr="enter left move 200px">
+						<figure class='book'>
+
+						<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign black">
+										<h1><i class="fa fa-folder-open"></i></h1>
+										<p style="font-size:25px;">Team Organization</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+						<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="#">Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+						<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>Team</h1>
+                                <h3>Organization</h3>
+							</figcaption>
+						</figure>
+					</li>
+                    <li data-sr="enter right move 200px">
+						<figure class='book'>
+
+						<!-- Front -->
+
+							<ul class='hardcover_front'>
+								<li>
+									<div class="coverDesign purple">
+										<h1><i class="fa fa-paper-plane"></i></h1>
+										<p style="font-size:30px;">FTC Team Ethics</p>
+									</div>
+								</li>
+								<li></li>
+							</ul>
+
+						<!-- Pages -->
+
+							<ul class='page'>
+								<li></li>
+								<li>
+									<a class="btn" href="#">Download</a>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+						<!-- Back -->
+
+							<ul class='hardcover_back'>
+								<li></li>
+								<li></li>
+							</ul>
+							<ul class='book_spine'>
+								<li></li>
+								<li></li>
+							</ul>
+							<figcaption>
+								<h1>FTC Team</h1>
+                                <h3>Ethics</h3>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+        </div>
+        <div class="for-mobile">
+            <p style="font-size:30px;">Hardware <br> Mechanisms</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="#">Download (.pdf)</a><br><br><br>
+            <p style="font-size:30px;">Software</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="TeleOpHandbook.pdf" download>Download (.pdf)</a><br><br><br>
+            <p style="font-size:30px;">Hardware <br> Techniques</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="#">Download (.pdf)</a><br><br><br>
+            <p style="font-size:30px;">Outreach</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="#">Download (.pdf)</a><br><br><br>
+            <p style="font-size:30px;">Team Organization</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="#">Download (.pdf)</a><br><br><br>
+            <p style="font-size:30px;">FTC Team Ethics</p>
+            <a class="btn dwld-btn waves-effect waves-light" href="#">Download (.pdf)</a><br><br><br>
+        </div>
+        <footer class="page-footer" style="background:#F9BF3B; color:#c0392b; text-align:left;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Tino Surge FTC 7610</h5>
+                <p>Thanks for visiting our site!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5>Links</h5>
+                <ul>
+                      <li><a style="color:#c0392b;" href="#container">Back to top</a></li>
+                      <li><a style="color:#c0392b;" href="http://tinorobotics.org/">Cupertino Robotics</a></li>
+                      <li><a style="color:#c0392b;" href="http://thecurrent.co.nf">Official Blog</a></li>
+                      <li><a style="color:#c0392b;" href="http://www.chs.fuhsd.org/">Cupertino High School</a></li>
+                    <li><a style="color:#c0392b;" href="https://www.reddit.com/user/tinosurge">Reddit</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright" style="color:#c0392b;">
+            <div class="container">
+            © Tino Surge, 2015
+            </div>
+          </div>
+        </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-1.js"></script>
+    <script src="js/scrollReveal.min.js"></script>
+    <script>
+        window.sr = new scrollReveal();
+
+    </script>
+    <script>
+        $(function() {
+            $('a').click(function() {
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 1000);
+                return false;
+            });
+        });
+
+    </script>
+    </script>
+    <script>
+        (function() {
+            var docElem = window.document.documentElement,
+                didScroll, scrollPosition,
+                container = document.getElementById('container');
+
+            // trick to prevent scrolling when opening/closing button
+            function noScrollFn() {
+                window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+            }
+
+            function noScroll() {
+                window.removeEventListener('scroll', scrollHandler);
+                window.addEventListener('scroll', noScrollFn);
+            }
+
+            function scrollFn() {
+                window.addEventListener('scroll', scrollHandler);
+            }
+
+            function canScroll() {
+                window.removeEventListener('scroll', noScrollFn);
+                scrollFn();
+            }
+
+            function scrollHandler() {
+                if (!didScroll) {
+                    didScroll = true;
+                    setTimeout(function() {
+                        scrollPage();
+                    }, 60);
+                }
+            };
+
+            function scrollPage() {
+                scrollPosition = {
+                    x: window.pageXOffset || docElem.scrollLeft,
+                    y: window.pageYOffset || docElem.scrollTop
+                };
+                didScroll = false;
+            };
+
+            scrollFn();
+
+            var el = document.querySelector('.morph-button');
+
+            new UIMorphingButton(el, {
+                closeEl: '.icon-close',
+                onBeforeOpen: function() {
+                    // don't allow to scroll
+                    noScroll();
+                    // push main container
+                    classie.addClass(container, 'pushed');
+                },
+                onAfterOpen: function() {
+                    // can scroll again
+                    canScroll();
+                    // add scroll class to main el
+                    classie.addClass(el, 'scroll');
+                },
+                onBeforeClose: function() {
+                    // remove scroll class from main el
+                    classie.removeClass(el, 'scroll');
+                    // don't allow to scroll
+                    noScroll();
+                    // push back main container
+                    classie.removeClass(container, 'pushed');
+                },
+                onAfterClose: function() {
+                    // can scroll again
+                    canScroll();
+                }
+            });
+        })();
+
+    </script>
+</body>
+
+</html>
